@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora José Golóm</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f9a2;
+        }
+        body{
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        header{
+            padding: 20px;
+            background-color: rgba(2, 84, 129, 0.974);
+        }
+        h1{
+            color:rgb(255, 255, 255);
+            font-size: 2.5rem;
+            text-shadow:
+            0 0 7px #ffff,
+            0 0 10px #053d4fb4,
+            0 0 21px #bb13fe2d,
+            0 0 41px purple;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid rgb(158, 211, 248);
+            background-color: rgba(1, 23, 55, 0.491);
+            margin-top: 20px;
+        }
+        .logo-colegio{
+            transition: transform 0.3s ease;
+        }
+        .logo-colegio:hover{
+            transform: scale(1.5);
+        }
+
+        /* Estilo para las tarjetas de las entradas */
+        .entrada-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 750px; 
+            margin: 40px auto;
+            padding: 25px;
+            border: 1px solid #eeeeee;
+            transition: 0.3s;
+        }
+        .entrada-card:hover{
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }    
+        .entrada-card h3 {
+            color: #4a148c;
+            margin-top: 0;
+        }
+        .entrada-card p{
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Ajustes para contenido multimedia */
+        .media-container {
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #000; /* Fondo negro para que el video luzca mejor */
+        }
+        iframe, video {
+            width: 100%;
+            display: block;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bitácora Segunda y Tercera Unidad</h1>
+    </header>
+
+    <main>
+        <!-- ENTRADA 1: PDF -->
+        <div class="entrada-card">
+            <h3>Entrada 1: Introducción</h3>
+            <p>Esta semana aprendimos sobre Arduinos y su importancia en la automatización.</p>
+            
+            <div class="media-container">
+                <!-- Asegúrate de que el nombre del archivo sea idéntico -->
+                <iframe src="Introducción Arduino1.pdf" height="500px"></iframe>
+            </div>
+            <p><small><a href="Introducción Arduino1.pdf" target="_blank">Ver PDF en pantalla completa</a></small></p>
+        </div>
+
+        <!-- ENTRADA 2: VIDEO LOCAL -->
+        <div class="entrada-card">
+            <h3>Entrada 2: Práctica en Clase</h3>
+            <p>En esta sesión realizamos la primera conexión física de un LED intermitente utilizando la placa de Arduino y programación básica.</p>
+            
+            <div class="media-container">
+                <!-- Cambia 'nombre_de_tu_video.mp4' por el nombre real de tu archivo de video -->
+                <video controls>
+                    <source src="Grabación 2026-05-06 123514.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos locales.
+                </video>
+            </div>
+        </div>
+
+        <h4 style="color: #666; margin-top: 50px;">Contenido Página WEB</h4>
+    </main>
+
+    <footer>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="25" width="100" class="logo-colegio">
+        <span>José Golóm</span>
+    </footer>
+
+</body>
+</html>
